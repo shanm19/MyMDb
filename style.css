@@ -1,0 +1,242 @@
+/* all pages header */
+body{
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #555;
+    background-color: #ccc;
+}
+.header{
+    background: url("http://i1.wp.com/www.genesis-umc.org/web/wp-content/uploads/2015/01/Movie-Night-Website-Banner.jpg?resize=950%2C250") no-repeat center center;
+    background-size: cover;
+}
+.title h1{
+    font-family: 'Stalinist One', cursive;
+    font-size: 14vw;
+    color: #16B1CE;
+    opacity: .8;
+}
+.title h5{
+    color: #333;
+    font-size: 1.3em;
+    text-shadow: 1px 1px 3px white;
+}
+.navRow{
+    padding: .5em;
+}
+.myNavbar{
+    border-radius: 0;
+    position: relative;
+}
+.navFont a{
+    color: #ccc !important;
+}
+.navFont a:hover{
+    color: #16B1CE !important;
+    text-decoration: none !important;
+}
+.myBrand{
+    font-family: 'Stalinist One';
+    color: #16B1CE !important;
+    font-size: 4em;/*2.5*/
+    position: absolute;
+    top: 20px;
+    left: 8px;
+}
+.mySearchBtn{
+    background-color: #16B1CE;
+    background: linear-gradient(#ccc, #16B1CE 100%);
+    border: none;
+    color: #333;
+    height: 34px;
+}
+.mySearchBtn:hover{
+    background-color: #16B1CE;
+    background: linear-gradient(#16B1CE, #ccc 100%);
+    border: none;
+    color: #333;
+}
+.glyphicon-search{
+    font-size: 1.2em;
+    color: #555 !important;
+} 
+.searchRow{
+    padding: .5em;
+    width: 100%;
+}
+.linkRow{
+    padding: .5em;
+}
+
+/* footer section */
+.footer{
+    background-color: #222;
+    color: #ccc;
+}
+.fa{
+    width: 1em;
+    height: 1em;
+    font-size: 1.5em;
+    margin: .1em;
+    color: #ccc;
+}
+.followRow{
+    padding-top: 0;
+}
+.otherSection{
+    padding-top: 1em;
+}
+.otherSection p{
+    margin: 0;
+}
+.otherSection p:hover{
+    color: #16B1CE;
+}
+.myBtn{
+    color: #ccc;
+}
+.fa-facebook:hover{
+    color: #496D89;
+}
+.fa-twitter:hover{
+    color: #00aced;
+}
+.fa-youtube-play:hover{
+    color: #e62117;
+}
+.fa-tumblr:hover{
+    color: #36465d;
+}
+.fa-google-plus:hover{
+    color: #dd4d40;
+}
+
+/* Home Page */
+.cardRow{
+    display: table;
+}
+.homeCard{
+    background-color: #222;
+    box-shadow: 5px 5px 3px #555;
+    height: auto;
+    color: #ccc;
+}
+.slide{
+    padding: 0;
+}
+.myCarousel{
+    margin: 3vw;
+}
+.homeSideBar{
+    background-color: white;
+    color: #222;
+    float: none;
+    display: table-cell;
+}
+.showImg{
+    max-width: 100%;
+}
+.showTitle{
+    position: absolute;
+    left: 60px;
+    bottom: -10px;
+    color: white;
+}
+.playBtn{
+    opacity: .6;
+    color: #222;
+    font-size: 6vw;
+    position: absolute;
+    top: 30%;
+    left: 39.5%;
+}
+.playBtn i{
+    color: white;
+    text-shadow: 3px 3px 3px #222;
+}
+.leftCell{
+    float: none;
+    display: table-cell;
+}
+
+/* showtimes section */
+.showtimesCard{
+    padding: 2em;
+    box-shadow: 5px 5px 3px #555;
+    background-color: #333;
+    height: auto;
+    color: white;
+    min-height: 400px;
+}
+
+/* trivia section */
+.triviaCard{
+    padding: 2em;
+    box-shadow: 5px 5px 3px #555;
+    background-color: #333;
+    height: auto;
+    color: #ccc;
+    min-height: 400px;
+}
+.guessTheMovieRow{
+    color: #ccc;
+}
+.hint{
+    font-size: .6em;
+}
+.triviaBtn{
+    background-color: #16B1CE;
+    background: linear-gradient(#ccc, #16B1CE 100%);
+    border: none;
+    color: #333;
+}
+
+/* search response section */
+.movieCard{
+    background-color: white;
+    box-shadow: 3px 3px 3px #555;
+    padding: 1em;
+    height: auto;
+}
+.titleRow h1{
+    font-size: 3em;
+    margin-top: 0;
+}
+.year{
+    font-size: .5em;
+}
+
+/* navbar resizing */
+@media screen and (max-width: 768px) {
+    .myBrand{
+        font-size: 3em;
+        top: 0px;
+        left: 0px;
+    }
+    .titleRow h1{
+        margin-top: 1em;
+    }
+    .navFont{
+        text-align: left;
+    }
+    .navFont li{
+        margin-bottom: 1em;
+    }
+    .searchRow{
+        margin: auto;
+        margin-top: 1em;
+    }
+    
+    /* undo tabling */
+    .cardRow{
+        display: inline;
+    }
+    .leftCell{
+        float: none;
+        display: inline;
+    }
+    .homeSideBar{
+        float: none;
+        display: inline;
+        background-color: #222;
+        color: white;
+    }
+}
